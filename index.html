@@ -1,7 +1,47 @@
-{
-"component": "LlmGeneratedComponent",
-"props": {
-"height": "600px",
-"prompt": "Create an interactive Privacy Policy Generator tool for a mobile app. \n\nGoal: Help the user generate a simple HTML Privacy Policy for their app 'NoriPick'.\n\nInitial Data Values:\n- App Name: NoriPick\n- Company/Developer Name: Norify\n- Contact Email: (Empty/Placeholder for user to fill)\n- Ad Services: Google AdMob (Enabled by default)\n- Data Collection: No personal data collected (Enabled by default)\n\nFunctional Specification:\n1. Input Section (Form Layout):\n   - Text inputs for App Name, Developer Name, and Contact Email.\n   - Checkboxes for including 'AdMob' and 'Third-party analytics' sections.\n2. Preview Section:\n   - A live, formatted view of the Privacy Policy in Korean, suitable for a simple utility app.\n   - Content must state that the app does not collect personal information on servers, and if AdMob is enabled, explain that Google may collect device identifiers for advertising.\n3. Export Section:\n   - A 'Copy HTML Code' button that provides the full HTML 5 structure (including <html>, <head>, <body>) with basic clean styling so the user can paste it directly into their GitHub index.html file.\n4. Design Language:\n   - Professional and clean. Use UI grouping to separate input form from the preview/output.\n   - Ensure the generated Korean text is legally sounding and clear.\n\nInstructions: Generate this as a functional React-based tool. Labels and content must be in Korean as the user is Korean."
-}
-}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노리픽(NoriPick) 개인정보처리방침</title>
+    <style>
+        body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        h1 { color: #FF5C00; font-size: 24px; border-bottom: 2px solid #FF5C00; padding-bottom: 10px; margin-bottom: 20px; }
+        h2 { font-size: 18px; color: #333; margin-top: 30px; }
+        p, li { font-size: 15px; color: #555; }
+        ul { padding-left: 20px; }
+        .container { background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>노리픽(NoriPick) 개인정보처리방침</h1>
+        <p><strong>Norify</strong>(이하 '개발자')는 사용자의 개인정보를 매우 중요하게 생각하며, "정보통신망 이용촉진 및 정보보호 등에 관한 법률" 및 "개인정보보호법" 등 관련 법규를 준수하고 있습니다.</p>
+
+        <h2>1. 수집하는 개인정보의 항목 및 수집 방법</h2>
+        <p>노리픽(NoriPick) 앱은 회원가입 절차가 없으며, 사용자를 식별할 수 있는 어떠한 개인정보(이름, 전화번호, 주소 등)도 자체적으로 수집, 저장, 전송하지 않습니다. 앱 내에서 생성된 모든 룰렛(제비뽑기) 데이터는 사용자의 스마트폰 기기 내부에만 저장됩니다.</p>
+
+        <h2>2. 제3자 서비스(광고 모듈)의 정보 수집</h2>
+        <p>본 앱은 무료 서비스를 제공하기 위해 구글 애드몹(Google AdMob) 광고 플랫폼을 사용하고 있습니다. 광고 제공 목적으로 타사(Google)에서 다음과 같은 비식별 정보를 수집할 수 있습니다.</p>
+        <ul>
+            <li>광고 ID (Android 광고 ID 또는 iOS 광고 식별자)</li>
+            <li>기기 정보, 앱 사용 데이터 및 네트워크 정보</li>
+        </ul>
+        <p>Google의 개인정보처리방침에 대한 자세한 내용은 아래 링크를 참고해 주시기 바랍니다.<br>
+        <a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침 보기</a></p>
+
+        <h2>3. 개인정보의 파기</h2>
+        <p>본 앱은 개발자 서버로 개인정보를 수집하지 않으므로 파기할 개인정보가 존재하지 않습니다. 사용자가 스마트폰에서 앱을 삭제하는 즉시, 기기 내부에 저장된 모든 앱 데이터가 영구적으로 파기됩니다.</p>
+
+        <h2>4. 개인정보 보호책임자 및 문의처</h2>
+        <p>앱 사용 및 개인정보와 관련된 문의사항이 있으신 경우 아래 연락처로 문의해 주시기 바랍니다.</p>
+        <ul>
+            <li><strong>개발자:</strong> Norify</li>
+            <li><strong>이메일:</strong> [본인의 이메일 주소 입력]</li>
+        </ul>
+
+        <h2>5. 본 방침의 변경</h2>
+        <p>이 개인정보처리방침은 2026년 4월 20일부터 적용됩니다. 법령이나 앱 기능 변경에 따라 내용이 추가, 삭제, 수정될 경우 관련 규정에 따라 사전 공지하겠습니다.</p>
+    </div>
+</body>
+</html>
